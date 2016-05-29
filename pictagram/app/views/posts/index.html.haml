@@ -1,9 +1,9 @@
 %h1 Pictagram
 = link_to "New Post", new_post_path
 
--# - if @posts.any?
--#   - @posts.each do |post|
--#     = link_to post.image, post_path(post)
--#     %p= post.caption
--# - else
--#   %h2 No posts yet!
+- if @posts.any?
+  - @posts.each do |post|
+    %p{:id => "img"}= link_to image_tag(post.image.url(:medium)), post_path(post)
+    %p= post.caption
+- else
+  %h2 No posts yet!
