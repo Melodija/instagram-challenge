@@ -1,9 +1,10 @@
-%h1 Pictagram
-= link_to "New Post", new_post_path
-
-- if @posts.any?
-  - @posts.each do |post|
-    %p=link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post)
-    %p= post.caption
-- else
-  %h2 No posts yet!
+.posts-wrapper.row
+  -@posts.reverse.each do |post|
+    .post
+      .post-head
+        .name
+          Username
+      .image.center-block
+        =link_to (image_tag post.image.url(:medium), class: 'img-responsive'), post_path(post)
+      %p.caption
+        =post.caption

@@ -1,0 +1,122 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-color: #E8EDDF;
+  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+  a {
+    color: #F5CB5C;
+    text-decoration: none;
+    font-size: 25px;
+  }
+}
+
+.navbar-default {
+  background-color: #242423;
+  height: 54px;
+  .navbar-nav li a {
+    color: #F5CB5C;
+  }
+  .navbar-nav li a:hover {
+    color: #F5CB5C;
+    text-decoration: underline;
+  }
+}
+
+.navbar-container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.posts-wrapper {
+  padding-top: 40px;
+  margin: 0 auto;
+  max-width: 642px;
+  width: 100%;
+}
+
+.post {
+  background-color: #333533;
+  border-color: #242423;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  margin-bottom: 60px;
+}
+
+.post-head {
+  height: 64px;
+  padding: 14px 20px;
+  color: #F5CB5C;
+  text-align: right;
+  font-size: 18px;
+  line-height: 18px;
+  .thumbnail {}
+  .name {
+    display: block;
+  }
+}
+
+.image {
+  border-bottom: 1px solid #242423;
+  border-top: 1px solid #242423;
+}
+
+.caption {
+  padding: 24px 24px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #F5CB5C;
+
+}
+
+.form-wrapper {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #242423;
+  padding: 40px;
+  border: 1px solid #242423;
+  border-radius: 3px;
+  color: #F5CB5C;
+}
+
+.edit-links {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #E8EDDF;
+
+  a {
+    color: #F5CB5C;
+  }
+  a:hover {
+    color: #F5CB5C;
+  }
+}
+
+.btn {
+  background-color: #F5CB5C;
+  border-color: #242423;
+  .btn:hover {
+    color: #DCB652;
+  }
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
